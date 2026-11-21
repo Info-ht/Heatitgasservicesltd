@@ -71,7 +71,7 @@ section.block{padding-block:4.5rem}
 .card ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
 .card li{padding-left:1.7rem;position:relative}
 .card li::before{content:"";position:absolute;left:.25rem;top:.45rem;width:.5rem;height:.9rem;border:solid var(--c);border-width:0 3px 3px 0;transform:rotate(40deg) scale(.8);transform-origin:center}
-.heat{--c:var(--orange)}.gas{--c:var(--blue)}.plumb{--c:var(--green)}.build{--c:#6b4f2a}.elec{--c:#8a6d00}.carp{--c:#7a3f12}.card .go{display:inline-block;margin-top:1.2rem;font-weight:700;color:var(--c)}
+.heat{--c:var(--orange)}.gas{--c:var(--blue)}.plumb{--c:var(--green)}.build{--c:#6b4f2a}.elec{--c:#8a6d00}.carp{--c:#7a3f12}.decor{--c:#1d6b6b}.cols.two{grid-template-columns:repeat(2,1fr)}.card .go{display:inline-block;margin-top:1.2rem;font-weight:700;color:var(--c)}
 .area{background:var(--soft)}
 .area .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
 .area h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin-bottom:1rem}
@@ -114,7 +114,7 @@ footer small{display:block;margin-top:1.5rem;color:#9fb0cc;width:100%}
 .hero .wrap,.area .wrap{grid-template-columns:1fr}
 .hero .wrap{padding-block:2.5rem}
 .hero .badge{right:.4rem;top:.4rem;max-width:6.8rem;padding:.2rem .4rem}
-.cols{grid-template-columns:1fr}
+.cols,.cols.two{grid-template-columns:1fr}
 .trust ul{grid-template-columns:repeat(2,1fr)}
 .trust li{border-left:0}
 nav a.l{display:none}
@@ -182,6 +182,7 @@ section.block{padding-block:3rem}
 <li><a href="#building">Building work</a></li>
 <li><a href="#electrical">Electrical</a></li>
 <li><a href="#carpentry">Carpentry</a></li>
+<li><a href="#decorating">Painting &amp; decorating</a></li>
 <li><a href="#pricing">Our prices</a></li>
 <li><a href="#quote">Free quote</a></li>
 </ul></div></nav>
@@ -210,10 +211,10 @@ section.block{padding-block:3rem}
 <section class="block" id="trades" style="padding-top:0">
 <div class="wrap">
 <div class="head">
-<h2>Building, electrical &amp; carpentry</h2>
-<p>The same trusted team for building work, electrics and joinery, so your whole project is handled in one place.</p>
+<h2>Building, electrical, carpentry &amp; decorating</h2>
+<p>The same trusted team for building work, electrics, joinery and decorating, so your whole project is handled in one place.</p>
 </div>
-<div class="cols">
+<div class="cols two">
 <article class="card build" id="building">
 <h3>Building services</h3>
 <ul><li>Extensions &amp; loft conversions</li><li>Kitchen &amp; bathroom renovations</li><li>Structural alterations &amp; knock-throughs</li><li>Plastering &amp; rendering</li><li>Brickwork &amp; pointing</li><li>General building repairs</li></ul>
@@ -229,6 +230,11 @@ section.block{padding-block:3rem}
 <ul><li>Door hanging</li><li>Wood &amp; laminate flooring</li><li>Skirting, architraves &amp; boxing in</li><li>Kitchen fitting</li><li>Fitted wardrobes &amp; shelving</li><li>Decking &amp; fencing</li></ul>
 <a class="go" href="/carpentry">Carpentry &rarr;</a>
 </article>
+<article class="card decor" id="decorating">
+<h3>Painting &amp; decorating</h3>
+<ul><li>Interior painting</li><li>Exterior painting</li><li>Wallpaper hanging &amp; removal</li><li>Woodwork, skirting &amp; doors</li><li>Preparation, filling &amp; sanding</li><li>End-of-tenancy redecoration</li></ul>
+<a class="go" href="/painting-decorating">Painting &amp; decorating &rarr;</a>
+</article>
 </div>
 </div>
 </section>
@@ -243,6 +249,7 @@ section.block{padding-block:3rem}
 <a href="/building-services"><b>Building services</b><span>Extensions, renovations and building repairs</span></a>
 <a href="/electrical-services"><b>Electrical services</b><span>Rewires, fuse boards, lighting and fault finding</span></a>
 <a href="/carpentry"><b>Carpentry</b><span>Doors, flooring, kitchens and fitted storage</span></a>
+<a href="/painting-decorating"><b>Painting and decorating</b><span>Interior, exterior and wallpapering</span></a>
 <a href="/guide-heat-loss-calculations"><b>Guide: heat loss calculations</b><span>Why the right sizing matters</span></a>
 <a href="/guide-signs-you-need-a-powerflush"><b>Guide: signs you need a powerflush</b><span>Cold spots, noise and slow heating</span></a>
 </div></div></section>
@@ -287,12 +294,13 @@ section.block{padding-block:3rem}
 <tr><th scope="row">Standard call-out</th><td>£95</td></tr>
 <tr><th scope="row">Emergency call-out, 24 hours, 7 days a week</th><td>£150</td></tr>
 </tbody></table>
-<table style="--c:#6b4f2a"><caption>Building, electrical &amp; carpentry</caption><tbody>
+<table style="--c:#6b4f2a"><caption>Building &amp; trades</caption><tbody>
 <tr><th scope="row">Small electrical job or fault finding</th><td>£95</td></tr>
 <tr><th scope="row">Small carpentry job</th><td>£95</td></tr>
 <tr><th scope="row">Rewires &amp; fuse board upgrades</th><td>Free quote</td></tr>
 <tr><th scope="row">Building work &amp; renovations</th><td>Free quote</td></tr>
 <tr><th scope="row">Kitchens, flooring &amp; fitted furniture</th><td>Free quote</td></tr>
+<tr><th scope="row">Painting &amp; decorating</th><td>Free quote</td></tr>
 </tbody></table>
 </div>
 <p class="note">The £95 rate covers the first hour on site. Time over the first hour is charged at £100 per hour. Parts are extra where needed. Boiler installations are priced by free quote. Cancel at least 24 hours before your appointment at no charge. Cancellations on the day are charged the £95 call-out fee. See our <a href="/terms">terms and conditions</a>.</p>
@@ -319,7 +327,7 @@ section.block{padding-block:3rem}
 <input type="hidden" name="_subject" value="New booking request">
 <div class="two"><label>Your name<input name="n" autocomplete="name" required></label><label>Phone number<input name="p" type="tel" autocomplete="tel" required></label></div>
 <div class="two"><label>Email<input name="email" type="email" autocomplete="email" required></label><label>Postcode<input name="pc" autocomplete="postal-code" required></label></div>
-<label>What do you need?<select name="s"><option>Boiler installation</option><option>Boiler service</option><option>Boiler repair</option><option>Powerflush</option><option>Heat loss calculation</option><option>Landlord gas safety certificate (CP12)</option><option>Gas safety inspection</option><option>Plumbing repair</option><option>Building work</option><option>Electrical work</option><option>Carpentry</option><option>Emergency call-out</option><option>Something else</option></select></label>
+<label>What do you need?<select name="s"><option>Boiler installation</option><option>Boiler service</option><option>Boiler repair</option><option>Powerflush</option><option>Heat loss calculation</option><option>Landlord gas safety certificate (CP12)</option><option>Gas safety inspection</option><option>Plumbing repair</option><option>Building work</option><option>Electrical work</option><option>Carpentry</option><option>Painting and decorating</option><option>Emergency call-out</option><option>Something else</option></select></label>
 <label>Describe the issue<textarea name="i" required></textarea></label>
 <label>Days and times that suit you<input name="t" placeholder="For example weekday mornings"></label>
 <button class="btn btn-call" type="submit">Send booking request</button>
